@@ -1,0 +1,14 @@
+extends base.pug
+block style 
+    link(rel='stylesheet', href="../static/style.css")
+    link(rel='stylesheet', href="../static/formstyle.css")
+block content 
+    div.container
+        form(action="/" method="post")
+            h1 Contact Us
+            input(type="text", name="name", placeholder="Write your name" class="in")
+            input(type="email", name="email", placeholder="Write your email" class="in")
+            input(type="address", name="address",placeholder="write your address" class="in")
+            input(type="phone", name="number",placeholder="write you number" class="in")
+            button.btn 
+                |Submit
